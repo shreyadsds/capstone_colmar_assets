@@ -1,0 +1,453 @@
+/* Overall Style */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    color: #303030;
+    font-size: 16px;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 1rem 1.5rem;
+    position: relative;
+    top: 4rem;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #d8d8d8;
+}
+
+
+/* Both devices */
+
+
+/* Layout */
+
+header {
+    background-color: #ffffff;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+
+/* Patterns */
+
+button {
+    height: 5rem;
+    width: 30px;
+    background-color: #303030;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    flex-shrink: 1;
+    border-radius: 25px;
+}
+
+.dar {
+    background-color: #c4b7b7;
+}
+
+.dark {
+    background-color: #d8d8d8;
+}
+
+
+/* Text styles */
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.caption {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #303030;
+    line-height: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1rem;
+}
+
+
+/* Sections */
+
+
+/* Cover */
+
+.cover {
+    background-color: #d8d8d8;
+    width: 100%;
+    display: flex;
+    font-family: sans-serif;
+}
+
+
+/* Articles */
+
+.articles {
+    display: flex;
+}
+
+.card_pic {
+    width: 100%;
+}
+
+.articles .others {
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.articles .others .card_pic .description a {
+    color: #28BFB2;
+}
+
+
+/* Courses */
+
+.courses h1 {
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Thesis */
+
+.thesis {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis h1 {
+    text-align: center;
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 801px) {
+    .mobile {
+        display: none;
+    }
+    /* Patterns */
+    button {
+        width: 20rem;
+    }
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #logo {
+        height: 4rem;
+        margin: 0 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+    nav {
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 1.5rem;
+    }
+    li {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    /* Footer */
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .links a {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+    /* Layout patterns */
+    .left {
+        width: 60%;
+        padding: 2rem 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .right {
+        width: 40%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .card_pic .pic {
+        width: 35%;
+        padding: 1rem;
+    }
+    .card_pic .description {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card_pic .description h2 {
+        line-height: normal;
+        margin: 0;
+    }
+    /* Sections */
+    /* Cover */
+    .cover h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .cover .pic img {
+        width: 100%;
+    }
+    .cover .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* Articles */
+    .articles {
+        flex-direction: row;
+    }
+    .articles .featured .pic img {
+        width: 100%;
+        height: auto;
+    }
+    .articles .others {
+        display: flex;
+        flex-direction: column;
+    }
+    .articles .others .card_pic {
+        display: flex;
+        flex-direction: row;
+    }
+    .articles .others .card_pic .pic {
+        width: 35%;
+    }
+    .articles .others .card_pic .pic img {
+        width: 100%;
+        height: auto;
+    }
+    /* Courses */
+    .courses {
+        background-color: #d8d8d8;
+        padding: 2rem 3.5rem;
+    }
+    .courses .course {
+        width: 30%;
+        background-color: white;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 1rem;
+    }
+    .courses .up_row,
+    .courses .down_row {
+        display: flex;
+        flex-direction: row;
+    }
+    .courses .up_row {
+        margin-bottom: 2rem;
+    }
+    .courses .course .pic {
+        width: 100%;
+    }
+    .courses .course .pic img {
+        width: 100%;
+    }
+    .course .description {
+        padding: 0 1rem;
+    }
+    /* Thesis */
+    .thesis_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .thesis_content .featured {
+        padding-top: 0;
+    }
+    .thesis_content .featured .pic {
+        width: 100%;
+    }
+    .thesis_content .featured .pic video {
+        width: 100%;
+    }
+    .thesis_content .others .card_pic {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .thesis_content .others .card_pic .pic {
+        width: 35%;
+    }
+    .thesis_content .others .card_pic .pic img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+    /* Patterns */
+    button {
+        width: 100%;
+    }
+    .dark {
+        background-color: white;
+    }
+    /* Text styles */
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        line-height: 1.6rem;
+    }
+    /* Header */
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 1.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    /* Footer */
+    footer {
+        padding-top: 2.5rem;
+    }
+    footer .links {
+        display: none;
+    }
+    /* Sections */
+    /* Cover */
+    .cover {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .cover .pic {
+        width: 100%;
+    }
+    .cover .pic img {
+        width: 100%;
+    }
+    .cover .description {
+        padding: 0 1rem;
+    }
+    /* Articles */
+    .articles .featured {
+        display: none;
+    }
+    .articles .others {
+        padding: 1rem 1rem 2rem 1rem;
+        width: 100%;
+    }
+    .articles .others .white {
+        margin-bottom: 4rem;
+    }
+    .articles .others .card_pic .pic {
+        width: 100%;
+    }
+    .articles .others .card_pic .pic img {
+        width: 100%;
+    }
+    /* Courses */
+    .courses {
+        margin-bottom: 1.5rem;
+    }
+    .courses .up_row,
+    .courses .down_row {
+        display: flex;
+        flex-direction: column;
+    }
+    .courses .course {
+        background-color: #d8d8d8;
+        padding: 1rem 1rem 1.5rem 1rem;
+        margin: 0 1rem 0.5rem 1rem;
+    }
+    .course .pic {
+        display: none;
+    }
+    .course .description h3,
+    .course .description p {
+        display: none;
+    }
+    /* Thesis */
+    .thesis .others {
+        display: none;
+    }
+    .thesis .featured {
+        width: 100%;
+    }
+    .thesis .featured video {
+        width: 100%;
+    }
+    .thesis .featured .description {
+        display: none;
+    }
+}
